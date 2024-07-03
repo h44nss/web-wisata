@@ -1,0 +1,140 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/css/about.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>HOME</title>
+  </head>
+  <body id="home">
+    <header>
+      <!-- Navigation -->
+      <section class="navigation">
+        <div class="container">
+          <div class="box-navigation">
+            <div class="box">
+              <script>
+                console.log("Date");
+                var waktu = new Date();
+                var jam = waktu.getHours();
+                var mnt = waktu.getMinutes();
+                var dtk = waktu.getSeconds();
+                var tgl = waktu.getDate();
+                var bln = waktu.getMonth();
+                var thn = waktu.getFullYear();
+                var hr = waktu.getDay();
+
+                var bulan = [
+                  "Januari",
+                  "Februari",
+                  "Maret",
+                  "April",
+                  "Mei",
+                  "Juni",
+                  "Juli",
+                  "Agustus",
+                  "September",
+                  "Oktober",
+                  "November",
+                  "Desember",
+                ];
+                var hari = [
+                  "Minggu",
+                  "Senin",
+                  "Selasa",
+                  "Rabu",
+                  "Kamis",
+                  "Jumat",
+                  "Sabtu",
+                ];
+
+                if (jam <= 10) {
+                  document.write("Selamat Pagi!");
+                } else if (jam <= 15) {
+                  document.write("Selamat Siang!");
+                } else if (jam <= 18) {
+                  document.write("Selamat Sore!");
+                } else {
+                  document.write("Selamat Malam!");
+                }
+                document.write("<br>");
+                document.write(
+                  hari[hr] + ", " + tgl + " " + bulan[bln] + " " + thn + "<br>"
+                );
+              </script>
+            </div>
+            <div class="box menu-navigation">
+              <ul>
+                <li>
+                  <i class="ri-home-3-line"></i>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <i class="ri-gallery-view-2"></i>
+                  <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                  <i class="ri-information-2-line"></i>
+                  <a href="about.html">About</a>
+                </li>
+                <li>
+                  <i class="ri-contacts-line"></i>
+                  <a href="contact.html">Contact US</a>
+                </li>
+              </ul>
+            </div>
+            <div class="box menu-bar">
+              <i class="ri-menu-3-fill" style="color: white"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Navigation end -->
+    </header>
+
+    <!--about start-->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="box-about">
+          <div class="box">
+            <h1>Pulau Seribu</h1>
+            <p>
+              A Brief History of the Creation of the Thousand Island Web The
+              beginning of the formation of Pulau Seribu came from a colony of
+              animals that had died and spread in the Jakarta Sea area. From
+              there plants and trees fill the island, Thousand Islands are often
+              a tourist destination because in this archipelago because of this
+              natural beauty This website was created on October 18, 2023,
+              Intended to Know More about Thousand Islands Tourism, Tourism
+              Doesn't Need to Be in Bali, Only in Jakarta Can You LOHHH.....,
+              Hurry Up and Come to the Thousand Islands
+            </p>
+          </div>
+          <div class="box">
+            <img src="./image/macan.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--about end-->
+
+     <!--footer-->
+     <dic class="footer">
+        <p>&copy; 2023 by Mohamad Burhan Adli(231011700895) Kelas 01SIFP006</p>
+      </div>
+      <!--footer end-->
+
+      <script src="./dist/js/script.js"></script>
+  
+  </body>
+</html>
